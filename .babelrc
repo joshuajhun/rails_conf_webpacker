@@ -1,0 +1,35 @@
+{
+  "presets": [ 
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "node": "current"
+        },
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    "syntax-dynamic-import",
+    "transform-object-rest-spread",
+    [
+      "transform-class-properties",
+      {
+        "spec": true
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        ["env", {
+          "targets": {
+          "node": "current"
+          }
+        }]
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "twio_webpacker",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.4",
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "webpack-dev-server": "2.11.2"
+  },
+  "scripts": {
+    "start": "./bin/webpack-dev-server",
+    "test": "jest --watch"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/app/javascript/components"
+    ],
+    "setupFiles": [
+      "<rootDir>/app/javascript/test-config/setupTests.js"
+    ]
+  }
+}
