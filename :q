@@ -1,32 +1,25 @@
-import React,{ Component } from 'react'
-import Form from '../Form';
-import CardContainer from '../CardContainer';
+import React,{ Component } from 'react';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      ideas: []
+      ideas: []  
     };
   };
 
-  addIdea = (idea) => {
+  addIdea(idea) {
     const ideas = [ ...this.state.ideas, { id: Date.now(), ...idea }]
     this.setState({ ideas })
   }
 
-  removeIdea = (id) => {
+  removeIdea(id) {
     const ideas = this.state.ideas.filter(idea => idea.id !== id);
     this.setState({ ideas });
   }
 
   render() {
-    return (
-      <div>
-        <Form />
-        <CardContainer />
-      </div>
-    )
+    <h1> suh dude </h1>;
   }
 };
 

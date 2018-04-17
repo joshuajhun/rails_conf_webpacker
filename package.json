@@ -16,7 +16,7 @@
     "webpack-dev-server": "2.11.2"
   },
   "scripts": {
-    "start": "./bin/webpack-dev-server",
+    "start": "./bin/webpack-dev-server --hot",
     "test": "jest --watch"
   },
   "jest": {
