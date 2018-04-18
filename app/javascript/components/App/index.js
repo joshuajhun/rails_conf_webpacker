@@ -24,7 +24,8 @@ class App extends Component {
     return (
       <div>
         <Form submitIdea={ this.addIdea }/>
-        <CardContainer />
+        <CardContainer ideas={ this.state.ideas }
+                       removeIdea={ this.removeIdea }/>
       </div>
     )
   }
