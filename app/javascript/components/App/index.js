@@ -23,7 +23,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Form />
+        <Form submitIdea={ this.addIdea }/>
         <CardContainer />
       </div>
     )

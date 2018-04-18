@@ -39,6 +39,7 @@ describe('App tests', () => {
                             { id: 2, title: 'new title', body: 'new body' }, 
                             { id: 3, title: 'remove me', body: 'now' }
                            ];
+
       renderedApp.setState({ ideas: currentState });
       renderedApp.instance().removeIdea(2);
       
@@ -51,6 +52,7 @@ describe('App tests', () => {
 
       expect(renderedApp.find(Form).length).toBe(expectedLength)
     });
+
     it('App should render a CardContainer', () => {
       const expectedLength = 1 
 
