@@ -2,7 +2,7 @@
 
 ## Setup
 
-To setup up this repo they're are a couple of prequisits. 
+To setup up this repo they're are a couple of prerequisite. 
 
 * Ruby 2.2+
 * Rails 4.2+ (If you're on 5.1 it's even better!)
