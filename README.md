@@ -2,7 +2,7 @@
 
 ## Setup
 
-To setup up this repo they're are a couple of prequisits. 
+To setup up this repo they're are a couple of prerequisite. 
 
 * Ruby 2.2+
 * Rails 4.2+ (If you're on 5.1 it's even better!)
@@ -36,4 +36,3 @@ to go.
 
 My goal is to change your mind and show that JS may not be as bad you think it is. It may be frustrating but isn't programming frustrating? 
 This app is as stripped down as possible. No CSS just javascript, react, tests, and webpack. 
-
