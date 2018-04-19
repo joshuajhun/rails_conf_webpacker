@@ -16,15 +16,15 @@ describe('Card UI tests', () => {
   
   it('When Card button is clicked it should fire function with correct arguments', () => {
     const mockRemoveIdea = jest.fn()
-    const mockId = 1
+    const expectedArgument = 1
     const renderedCard = shallow(<Card title='some title'
                                        body='some body'
-                                       id={ mockId }
+                                       id={ 1 }
                                        removeIdea={ mockRemoveIdea } />);
     const removeButton = renderedCard.find('button');
 
     removeButton.simulate('click')
 
-    expect(mockRemoveIdea).toHaveBeenCalledWith(1);
+    expect(mockRemoveIdea).toHaveBeenCalledWith(expectedArgument);
   });
 });
