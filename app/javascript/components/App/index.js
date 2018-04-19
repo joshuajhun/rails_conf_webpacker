@@ -16,7 +16,6 @@ class App extends Component {
   }
 
   removeIdea = (id) => {
-    console.log(id)
     const ideas = this.state.ideas.filter(idea => idea.id !== id);
     this.setState({ ideas });
   }
